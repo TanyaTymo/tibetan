@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; font-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.0/dist/umd/supabase.js; style-src 'unsafe-inline'; img-src data:; font-src data:; connect-src https://ijhfhoflxwvbwaanjvmg.supabase.co; object-src 'none'; base-uri 'none'">
 <title>Тибетська · Малі кроки</title>
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAE4klEQVR4nMWXa2wUVRTH/3eezMxuW+gjtopSIIEPKImiRIkGkcQaCyKtWP1A/ID4ChqokmhM+KRREaO16geMygeUNrwKRRrro9LIQx6CISVoYqmAlqXv3W53dmbuNecWmjbdSuu2cjaTncmcub//PefcFwMAIYTKGAs6/26eZk/JfRGcF/uBPw1CaAAY0jMBxnxN1c5BUWrjHZcrJucXnrvKZFdvol2RFablfKgbRp7n9sH3PAiMj1EPNF2HblrwksmI29e7JpyVVy3Z5NDb01Zih7O2e24crusGjDGFMZZuz4eY6Ddumqaqmzbi0a5SJyNnB4vH26dCsF9VVc/0ki5njKnjCU4hJNANUwkCrxtM3KZwn5dbdjgr6SYmHE5GDGIRk9gKmLLUc/sEhX2i4YNEKMQkNov1tPlj6bkQAlwIKIxRQ2mnQxkrXFVVhMMZ0FRNPqdjxB512AmmaRq6YlGsq3wHrZ1tMHRjiAi6D3gwJmHKaB254DAnWfi8bg9a2v7C5q93Qdf1AZgUKKOTCV0bfXSU0cJty8GJM6dxsvksNj6zBs2XLuKHEz/DcULwgwC6pqO9pxvrP9mEC5cjw6KTlgAIQFEUbN6/Cw/eOR9J30Px3QvwaV0NPN8D1aJhmqjYXYWN27agck+1jA4fDwEB5wiFwth/uBHxZB/mzZqNSx0duHX6DFimhq31+xDOyMWBk0dR1fANFs2bj5qDDTjxWxNsy5LRS0uAqijoSyRQfaBe9ppScUv+zTANC8vvW4jaI42ItLfirW1foDC/AB+vfVWOkI9qqqEqqozefxYQ8AC2E8Legw04cuY0cifnIjczB6ZuIDszG/k5+Yh0dWDVuxvQ1NKMl0qfxKypM/BU0RLs/qkBh5tOwbZtcM7HLkCAqlpDNNqD93ZsxYwbp2JO4UzEkwn5PuEmML3gJsydORt7DzWi+J57sej2u9DaGcETi4tQkJOHD3Z+1R+Bf5mvlBF7H3BYdghb6mvx+8XzeKVsJQwqLE7Le/8sSPXx/LLHsOrhZVi9tASe78srb/IUrF6yHHVHD+LHU8fg2I70TWWsN9o+LEs0fKiKL3d1YmH5ajxwx3xsemGdnISoJgb70di3zEnocxNyOJIwmqa9wMey19aiIDsP2zdsRDLpppy6lVSqqHINcxIqa6oQdxN49pFSCZDrAOcDFz3TkOyM9sj/q+8TXhIZTghPLynB978cRf2xQ1eiEFw7ApxzOJaNppY/sHj9c3i5bCXKV6xEZ6y7f/4f5T6J0Y8Bj75eTj3Cvjcr4Pv+MD9t2IeKgqTv440vP0OG48hC+/b4YXgyvKNiy5qjnIdtBwvmzEXlzirsbPwOZYseQrQ3NiSN2kgf66qK7lgMa95/G37gy/yNZe2jdmgmtE2Tlj3UHz+CsvuLrp0CIQQMw0BrexvOXmiBqetXXoyBPkgFtUfFWXhDgSxIn/syPSMKGBgFmgbDMOkBaRsDPM9D0qN1Y2getZT+NIx8Hy59kD5eBm+kHZRG26JUuyJyVsd3Z556SwbG/tR1XW7aJ5Q2FCyISWwFgu/RTYtOSPx/FMCJSezrfzCx7ezzIuCrDNNihmGonPNgItIhz2WcB8QgFjGJrdABkc5ose6Ox8HUSCgjSzUMY1zLj9qiNqltYhCLmAOH0+t5PP8HVFGi1CDB5Z8AAAAASUVORK5CYII=">
 <link rel="icon" type="image/svg+xml" sizes="any" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjZjVmM2VkIi8+CjxwYXRoIGQ9Ik0xMyA0MyAyNyAxOCAzNSAzMiA0MSAyMiA1MiA0M1oiIGZpbGw9IiNlN2VlZTQiIHN0cm9rZT0iIzI4NWQ0OSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0yMSAyOSAyNyAxOCAzMyAyOSAyNyAyNloiIGZpbGw9IiMyODVkNDkiIG9wYWNpdHk9Ii4xOCIvPgo8L3N2Zz4=">
@@ -51,7 +51,10 @@
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .dictionary-panel{padding:24px}.dictionary-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:16px}.dictionary-controls label{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600;min-width:0}.dictionary-controls .dictionary-query{grid-column:1/-1}.dictionary-controls input,.dictionary-controls select{font:inherit;font-weight:400;width:100%;min-width:0;min-height:48px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;color:var(--ink);background:var(--paper)}.dictionary-controls input{font-size:18px}.dictionary-controls :focus-visible{outline:3px solid #a6bf87;outline-offset:2px}.dictionary-table-wrap{overflow-x:auto}.dictionary-table{width:100%;border-collapse:collapse;text-align:left;margin-top:10px}.dictionary-table th{font-size:12px;letter-spacing:.04em;color:var(--muted);padding:14px 12px;border-bottom:2px solid var(--line)}.dictionary-table td{width:25%;padding:18px 12px;border-bottom:1px solid var(--line);vertical-align:middle;overflow-wrap:anywhere}.dictionary-table td[lang=en]{font-size:15px}.dictionary-table [lang=bo]{font:28px/1.9 "Kailasa","Noto Serif Tibetan",serif}.dictionary-table small{display:block;font-size:11px;color:var(--muted);margin-top:6px}.dictionary-table tbody tr:hover{background:var(--soft)}.dictionary-empty{padding:32px 0;text-align:center}
 @media(max-width:650px){.dictionary-controls{grid-template-columns:1fr}.dictionary-panel{padding:16px}.dictionary-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.dictionary-table,.dictionary-table tbody,.dictionary-table tr{display:block}.dictionary-table tr{padding:12px 0;border-bottom:1px solid var(--line)}.dictionary-table td{display:block;width:100%;padding:6px 4px;border:0}.dictionary-table td::before{content:attr(data-label);display:block;font:11px/1.5 system-ui;color:var(--muted);margin-bottom:3px}.dictionary-table [lang=bo]{font-size:30px}}
+
+.github-account-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:8px 14px}#github-account-open{min-height:38px;padding:6px 12px}#github-email{display:block;width:100%;margin:6px 0 14px;padding:10px;border:1px solid var(--line);border-radius:8px}#github-account .row,#github-conflict .row{flex-wrap:wrap}#github-account-email{overflow-wrap:anywhere}#github-account-message:empty,#github-account [hidden]{display:none}
 </style>
+<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.0/dist/umd/supabase.js" integrity="sha384-uteMfOloLDGt042uDz+xHGF3ym63/WQ6rFq7murQRG8Ih7QrXGEGNtWd8688sb4O" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="shell">
@@ -71,11 +74,11 @@
 <button type="button" id="backup">Зберегти копію прогресу</button>
 <button type="button" id="restore">Відновити з копії</button>
 <button type="button" id="help">Як користуватися</button>
-<p class="privacy">Без облікового запису.<br>Твої відповіді залишаються<br>у цьому браузері.</p>
+<p id="github-sync-status" class="privacy" role="status">Без входу прогрес зберігається в цьому браузері.</p>
 </div>
 </aside>
 <main class="main">
-<div class="topbar"><span id="page-label">Твій навчальний простір</span><span id="completion-label">0 із 10 уроків</span></div>
+<div class="topbar"><span id="page-label">Твій навчальний простір</span><div class="github-account-top"><span id="completion-label">0 із 10 уроків</span><button type="button" id="github-account-open" class="btn">Увійти</button></div></div>
 <div id="notice" class="notice" role="status" aria-live="polite"></div>
 <div id="app"></div>
 <noscript>Для вправ увімкни JavaScript у браузері. Усі матеріали вже всередині цього файлу; підключення до інтернету не потрібне.</noscript>
@@ -89,9 +92,37 @@
 <p class="small">Прогрес зберігається в цьому браузері, якщо дозволене локальне збереження. Для перенесення в інший браузер завантаж копію прогресу й відкрий її через «Відновити з копії». Кнопка «Продовжити практику» в нових розділах повертає до незавершеної вправи. Копія також зберігає прогрес нових розділів, написані відповіді, результати перевірки, попередні спроби та чернетки домашніх.</p>
 <p class="small">Перевірка враховує допустимі закінчення й поширені формулювання. У мовних відповідях пробіли, регістр і кінцева пунктуація не впливають на оцінку. У вправах на розділові знаки перевіряється саме знак. Якщо інший переклад не розпізнано, програма запропонує звірити його зі зразком, не стверджуючи, що переклад помилковий.</p>
 <p class="small">У розділі «Домашні» видно прогрес кожного домашнього. Кнопка Word завантажує запитання, твої поточні відповіді та попередні перевірені спроби, зокрема неправильні. Можна зберегти одне домашнє або всі разом.</p>
-<p class="small">Щоб відкрити програму наступного разу, двічі натисни файл «Тибетська — Малі кроки.html» у Finder. Якщо відкривається редактор: права кнопка → «Відкрити за допомогою» → Safari або Chrome.</p>
+<p class="small">Для прогресу на різних пристроях натисни «Увійти» та використовуй ту саму адресу електронної пошти. Перед зміною пристрою дочекайся повідомлення «Прогрес збережено онлайн».</p>
 <form method="dialog"><button type="submit" class="btn primary">До навчання</button></form>
 </dialog>
+<dialog id="github-account" class="dialog" aria-labelledby="github-account-title">
+  <h2 id="github-account-title">Вхід до додатка</h2>
+  <form id="github-login-form">
+    <p>Введи email. Надішлемо одноразове посилання для входу. Відкрий його в тому самому браузері.</p>
+    <label for="github-email">Email</label>
+    <input id="github-email" type="email" autocomplete="email" placeholder="name@example.com" required maxlength="254">
+    <button id="github-send-link" type="submit" class="btn primary">Надіслати посилання</button>
+  </form>
+  <div id="github-account-actions" hidden>
+    <p id="github-account-email"></p>
+    <div class="row">
+      <button id="github-sync" type="button" class="btn">Оновити прогрес</button>
+      <button id="github-import" type="button" class="btn" hidden>Перенести прогрес із цього браузера</button>
+      <button id="github-signout" type="button" class="btn">Вийти</button>
+    </div>
+  </div>
+  <p id="github-account-message" class="small" role="status"></p>
+  <form method="dialog"><button class="btn">До навчання</button></form>
+</dialog>
+<dialog id="github-conflict" class="dialog" aria-labelledby="github-conflict-title">
+  <h2 id="github-conflict-title">Різні відповіді у двох копіях</h2>
+  <p>Обери, які відповіді залишити там, де вони відрізняються. Незалежні зміни об’єднаються, а іншу копію буде завантажено як резервну.</p>
+  <div class="row">
+    <button id="github-keep-local" type="button" class="btn primary">Залишити з цього браузера</button>
+    <button id="github-keep-remote" type="button" class="btn">Залишити з облікового запису</button>
+  </div>
+</dialog>
+
 <script>const LESSONS=[{"title": "Я, ти, ми двоє та інші займенники", "source": "Colloquium · три особи → Homework 1 і 2", "examples": [{"title": "Я → ми двоє", "pieces": [["ང་", "я", "person"], ["གཉིས་", "двоє", "link"]], "meaning": "ང་ — я; ང་གཉིས་ — ми двоє; ང་ཚོ་ — ми (група). གཉིས་ уточнює, що осіб двоє."}, {"title": "Ти → ви двоє", "pieces": [["ཁྱེད་རང་", "ти", "person"], ["གཉིས་", "двоє", "link"]], "meaning": "[Certain] ཁྱེད་རང་གཉིས་ — ви двоє."}, {"title": "Ти → ви (група)", "pieces": [["ཁྱེད་རང་", "ти", "person"], ["ཚོ་", "група", "link"]], "meaning": "ཁྱེད་རང་ — ти; ཁྱེད་རང་གཉིས་ — ви двоє; ཁྱེད་རང་ཚོ་ — ви (група). Тут «ви» означає кількох співрозмовників."}, {"title": "Він і вона — одна тибетська форма", "pieces": [["ཁོང་", "він / вона", "person"]], "meaning": "ཁོང་ може означати і «він», і «вона». Стать людини зрозуміла з контексту; окремого слова для «вона» в цій парі немає."}, {"title": "Він / вона → вони двоє", "pieces": [["ཁོང་", "він / вона", "person"], ["གཉིས་", "двоє", "link"]], "meaning": "ཁོང་གཉིས་ — вони двоє. Порівняй: ཁྱེད་རང་གཉིས་ — ви двоє, коли звертаєшся до них."}, {"title": "Він / вона → вони (група)", "pieces": [["ཁོང་", "він / вона", "person"], ["ཚོ་", "група", "link"]], "meaning": "ཁོང་ཚོ་ — вони (група), про яку говориш. ཁྱེད་རང་ཚོ་ — ви (група), до якої звертаєшся."}], "questions": [{"prompt": "Який варіант означає «ми двоє»?", "options": ["ང་ཚོ་", "ང་གཉིས་", "ཁོང་གཉིས་"], "answer": 1, "explain": "[Certain] ང་ — я; ང་གཉིས་ — ми двоє.", "hint": "Знайди ང་ разом із གཉིས་."}, {"prompt": "Тебе й подругу питають «ви двоє…». Ви відповідаєте…", "options": ["ཁྱེད་རང་གཉིས་", "ཁོང་ཚོ་", "ང་གཉིས་"], "answer": 2, "explain": "[Certain] У відповіді «ви двоє» змінюється на «ми двоє».", "hint": "Почни відповідь від себе: «ми»."}, {"prompt": "Обери тибетською «ти» — звернення до однієї людини.", "options": ["ཁོང་", "ཁྱེད་རང་", "ང་"], "answer": 1, "explain": "ཁྱེད་རང་ — ти. Це людина, до якої звертаєшся.", "hint": "Шукай займенник співрозмовника без позначення двох осіб або групи."}, {"prompt": "Обери «ви» — звернення до групи людей.", "options": ["ཁྱེད་རང་ཚོ་", "ཁྱེད་རང་གཉིས་", "ཁོང་ཚོ་"], "answer": 0, "explain": "ཁྱེད་རང་ཚོ་ — ви (група). ཚོ་ позначає групу співрозмовників.", "hint": "Початок має означати співрозмовника; наприкінці потрібне позначення групи."}, {"prompt": "Ти звертаєшся саме до двох людей. Обери «ви двоє».", "options": ["ང་གཉིས་", "ཁོང་གཉིས་", "ཁྱེད་རང་གཉིས་"], "answer": 2, "explain": "ཁྱེད་རང་གཉིས་ — ви двоє. གཉིས་ означає «двоє».", "hint": "Потрібні «ти» як основа звернення та «двоє»."}, {"prompt": "Ти говориш про чоловіка. Обери «він».", "options": ["ཁོང་", "ཁོང་ཚོ་", "ཁྱེད་རང་"], "answer": 0, "explain": "ཁོང་ — він або вона. Тут контекст указує на чоловіка.", "hint": "Це одна людина, про яку говориш, а не співрозмовник."}, {"prompt": "Ти говориш про жінку. Обери «вона».", "options": ["ང་", "ཁྱེད་རང་", "ཁོང་"], "answer": 2, "explain": "ཁོང་ також означає «вона». Написання таке саме, як для «він»; значення уточнює контекст.", "hint": "Для «він» і «вона» використовується одна й та сама тибетська форма."}, {"prompt": "Обери «вони» — група людей, про яку ти говориш.", "options": ["ང་ཚོ་", "ཁོང་ཚོ་", "ཁྱེད་རང་ཚོ་"], "answer": 1, "explain": "ཁོང་ཚོ་ — вони (група). Це люди, про яких говориш; «ви» — люди, до яких звертаєшся.", "hint": "Шукай основу «він / вона» та позначення групи."}, {"prompt": "Обери «вони двоє».", "options": ["ཁོང་གཉིས་", "ཁྱེད་རང་གཉིས་", "ཁོང་ཚོ་"], "answer": 0, "explain": "ཁོང་གཉིས་ — вони двоє: дві людини, про яких говориш.", "hint": "Основа — «він / вона»; додай ознаку саме двох осіб."}]}, {"title": "У мене є", "source": "Colloquium · володіння → Homework 1, вправи 1 і 4", "examples": [{"title": "У мене є книга", "pieces": [["ང་", "я", "person"], ["ལ་", "після власника", "link"], ["དེབ་", "книга", "object"], ["ཡོད།", "є", "ending"]], "meaning": "[Certain] ང་ལ་དེབ་ཡོད། — у мене є книга."}, {"title": "Змінюємо лише предмет", "pieces": [["ང་", "я", "person"], ["ལ་", "після власника", "link"], ["ཁ་པར་", "телефон", "object"], ["ཡོད།", "є", "ending"]], "meaning": "[Certain] ང་ལ་ཁ་པར་ཡོད། — у мене є телефон."}, {"title": "У тебе є книга", "pieces": [["ཁྱེད་རང་", "ти", "person"], ["ལ་", "після власника", "link"], ["དེབ་", "книга", "object"], ["ཡོད་རེད།", "є (відомий факт)", "ending"]], "meaning": "ཁྱེད་རང་ལ་དེབ་ཡོད་རེད། — «У тебе є книга». Звертаєшся до однієї людини: ཁྱེད་རང་ — «ти». Постав ལ་ після всього займенника. Тут ти повідомляєш уже відомий факт, тому вживаєш закінчення «ཡོད་རེད།»."}, {"title": "У них є книга", "pieces": [["ཁོང་ཚོ་", "вони (група)", "person"], ["ལ་", "після власника", "link"], ["དེབ་", "книга", "object"], ["ཡོད་རེད།", "є (відомий факт)", "ending"]], "meaning": "ཁོང་ཚོ་ལ་དེབ་ཡོད་རེད། — «У них є книга». Говориш про групу: ཁོང་ཚོ་ — «вони». Частку ལ་ став після всього займенника, включно з позначкою групи ཚོ་. Якщо ти вже знаєш про книгу, вживай «ཡོད་རེད།»."}, {"title": "У вас є книга", "pieces": [["ཁྱེད་རང་ཚོ་", "ви (група)", "person"], ["ལ་", "після власника", "link"], ["དེབ་", "книга", "object"], ["ཡོད་རེད།", "є (відомий факт)", "ending"]], "meaning": "ཁྱེད་རང་ཚོ་ལ་དེབ་ཡོད་རེད། — «У вас є книга». Тепер звертаєшся до групи: до ཁྱེད་རང་ («ти») додається ཚོ་. Постав ལ་ після всієї форми ཁྱེད་རང་ཚོ་. Щоб повідомити відомий факт, використовуй те саме закінчення, що й у «У тебе є книга»."}], "questions": [{"prompt": "Обери правильний порядок слів для речення «У мене є книга».", "options": ["ང་ → ལ་ → དེབ་ → ཡོད།", "ང་ → དེབ་ → ལ་ → ཡོད།"], "answer": 0, "explain": "[Certain] Варіант A: ང་ལ་དེབ་ཡོད། — «У мене є книга». ང་ означає «я», а ལ་ стоїть відразу після власника. В обох варіантах частка є; відрізняється її місце.", "hint": "В обох варіантах ལ་ вже є. Обери той, де вона стоїть після ང་ («я»), перед དེབ་ («книга»)."}, {"prompt": "Заміни книгу на телефон у ང་ལ་དེབ་ཡོད།.", "options": ["ང་ཁ་པར་ལ་ཡོད།", "ང་ལ་ཁ་པར་ཡོད།"], "answer": 1, "explain": "[Certain] ང་ལ་ཁ་པར་ཡོད། — змінено тільки предмет.", "hint": "Збережи порядок «я + ལ་ + предмет + є»."}], "theory": {"mnemonics": [{"form": "ཡོད།", "icon": "🧴", "title": "ЙОД? Є в аптечці!", "scene": "Відкриваєш свою аптечку, а пляшечка йоду підстрибує й кричить:", "phrase": "Я є!"}, {"form": "མེད།", "icon": "🐻", "title": "Ведмідь з’їв МЕД — більше НЕМАЄ", "scene": "Ведмідь облизує порожню банку. Напис «МЕД» залишився, а самого меду немає."}, {"form": "ཡོད་རེད།", "icon": "🧠", "title": "РЕДактор моєї пам’яті", "scene": "У голові сидить маленький редактор із блокнотом:", "phrase": "У Тані є книга. Це вже записано, я знаю."}, {"form": "ཡོད་མ་རེད།", "icon": "🚫", "title": "МА — шматочок слова неМА", "scene": "Між ཡོད་ та རེད་ вклинюється великий знак «НЕМА»:", "pattern": "ཡོད་ → མ་ → རེད།", "note": "Цей образ нагадує місце заперечення саме в цій конструкції."}, {"form": "འདུག", "icon": "🔦", "title": "Ліхтарик: о, є!", "scene": "Світиш ліхтариком — у промені з’являється книга.", "phrase": "Освітила — побачила — є."}, {"form": "མི་འདུག", "icon": "🔦", "title": "Ліхтарик: перевірила — порожньо", "scene": "Промінь проходить по місцю, яке перевіряєш, але книги немає.", "phrase": "Шукала очима — немає."}], "mnemonicComparison": [{"form": "ཡོད་རེད།", "icon": "🗃️", "title": "Архіваріус", "scene": "Дістає стару картку. Це вже відомий факт.", "phrase": "Я це вже знаю, у мене записано."}, {"form": "འདུག", "icon": "🕵️", "title": "Детектив", "scene": "Дивиться через лупу. Це безпосереднє спостереження або щойно виявлений факт.", "phrase": "Я щойно сама це виявила."}], "title": "Володіння: у кого що є", "intro": "Вивчи порядок слів, порівняй усі займенники та потренуйся розрізняти твердження, заперечення й запитання. Відкривай розділи поступово; до опису можна повернутися з уроків і домашнього.", "sections": [{"title": "1. Як побудувати речення", "paragraphs": ["Володіння відповідає на запитання «у кого що є?». Порядок: власник → ལ་ → предмет → закінчення. Частка ལ་ стоїть після всього позначення власника: після ང་, ང་གཉིས་, ཁྱེད་རང་ཚོ་ тощо.", "Щоб утворити заперечення, змінюй закінчення, а порядок слів і ལ་ залишай. Щоб говорити про двох людей, додай གཉིས་ до займенника; для групи — ཚོ་.", "ཁོང་ означає «він» або «вона»: значення визначає контекст. «Ви» в прикладах нижче — група співрозмовників. དེབ་ (DEB) — книга / book."], "examples": [{"title": "Розбір: у нас двох є книга", "sentences": [{"bo": "ང་གཉིས་ལ་དེབ་ཡོད།", "uk": "ང་གཉིས་ — ми двоє; ལ་ — після власника; དེབ་ — книга; ཡོད། — є."}]}]}, {"title": "2. Ствердження й заперечення: три пари закінчень", "paragraphs": ["Спочатку обери пару за ситуацією, потім форму «є» або «немає». У межах кожної пари власник, частка ལ་ й назва предмета залишаються на своїх місцях."], "pairs": [{"context": "Про себе: я, ми двоє, ми", "yes": "ཡོད།", "no": "མེད།", "explanation": "У повідомленні про себе або свою групу для заперечення заміни ціле закінчення: ཡོད། → མེད།.", "examples": [{"title": "я", "sentences": [{"bo": "ང་ལ་དེབ་ཡོད།", "uk": "У мене є книга."}, {"bo": "ང་ལ་དེབ་མེད།", "uk": "У мене немає книги.", "pronunciation": "нгала теп ме"}]}, {"title": "ми двоє", "sentences": [{"bo": "ང་གཉིས་ལ་དེབ་ཡོད།", "uk": "У нас двох є книга."}, {"bo": "ང་གཉིས་ལ་དེབ་མེད།", "uk": "У нас двох немає книги."}]}, {"title": "ми (група)", "sentences": [{"bo": "ང་ཚོ་ལ་དེབ་ཡོད།", "uk": "У нас є книга."}, {"bo": "ང་ཚོ་ལ་དེབ་མེད།", "uk": "У нас немає книги."}]}]}, {"context": "Уже відомий факт про іншу людину", "yes": "ཡོད་རེད།", "no": "ཡོད་མ་རེད།", "explanation": "Коли повідомляєш відомий факт про співрозмовника або когось іншого, для заперечення постав མ་ перед རེད་.", "examples": [{"title": "ти", "sentences": [{"bo": "ཁྱེད་རང་ལ་དེབ་ཡོད་རེད།", "uk": "У тебе є книга."}, {"bo": "ཁྱེད་རང་ལ་དེབ་ཡོད་མ་རེད།", "uk": "У тебе немає книги."}]}, {"title": "ви двоє", "sentences": [{"bo": "ཁྱེད་རང་གཉིས་ལ་དེབ་ཡོད་རེད།", "uk": "У вас двох є книга."}, {"bo": "ཁྱེད་རང་གཉིས་ལ་དེབ་ཡོད་མ་རེད།", "uk": "У вас двох немає книги."}]}, {"title": "ви (група)", "sentences": [{"bo": "ཁྱེད་རང་ཚོ་ལ་དེབ་ཡོད་རེད།", "uk": "У вас є книга."}, {"bo": "ཁྱེད་རང་ཚོ་ལ་དེབ་ཡོད་མ་རེད།", "uk": "У вас немає книги."}]}, {"title": "він", "sentences": [{"bo": "ཁོང་ལ་དེབ་ཡོད་རེད།", "uk": "У нього є книга."}, {"bo": "ཁོང་ལ་དེབ་ཡོད་མ་རེད།", "uk": "У нього немає книги."}]}, {"title": "вона", "sentences": [{"bo": "ཁོང་ལ་དེབ་ཡོད་རེད།", "uk": "У неї є книга."}, {"bo": "ཁོང་ལ་དེབ་ཡོད་མ་རེད།", "uk": "У неї немає книги."}]}, {"title": "вони двоє", "sentences": [{"bo": "ཁོང་གཉིས་ལ་དེབ་ཡོད་རེད།", "uk": "У них двох є книга."}, {"bo": "ཁོང་གཉིས་ལ་དེབ་ཡོད་མ་རེད།", "uk": "У них двох немає книги."}]}, {"title": "вони (група)", "sentences": [{"bo": "ཁོང་ཚོ་ལ་དེབ་ཡོད་རེད།", "uk": "У них є книга."}, {"bo": "ཁོང་ཚོ་ལ་དེབ་ཡོད་མ་རེད།", "uk": "У них немає книги."}]}]}, {"context": "Безпосереднє спостереження", "yes": "འདུག", "no": "མི་འདུག", "explanation": "Для факту, який ти сама спостерігаєш або щойно виявила, заперечення утворюється додаванням མི་ перед འདུག.", "examples": [{"title": "У тебе: є → немає", "sentences": [{"bo": "ཁྱེད་རང་ལ་དེབ་འདུག", "uk": "У тебе є книга."}, {"bo": "ཁྱེད་རང་ལ་དེབ་མི་འདུག", "uk": "У тебе немає книги."}]}, {"title": "У них двох: є → немає", "sentences": [{"bo": "ཁོང་གཉིས་ལ་དེབ་འདུག", "uk": "У них двох є книга."}, {"bo": "ཁོང་གཉིས་ལ་དེབ་མི་འདུག", "uk": "У них двох немає книги."}]}]}]}, {"title": "3. Запитання до співрозмовника: ти, ви двоє, ви", "paragraphs": ["Коли питаєш людину про її власні речі, вживай ཡོད་པས། «є?» або མེད་པས། «немає?». Не перенось автоматично закінчення твердження ཡོད་རེད། у таке запитання.", "Порівняй: «У тебе є книга.» — ཁྱེད་རང་ལ་དེབ་ཡོད་རེད།; «У тебе є книга?» — ཁྱེད་རང་ལ་དེབ་ཡོད་པས།.", "У наведених базових запитаннях про наявність книги пиши དེབ་ без གཅིག་ «один». Тут питаємо, чи є книга, без уточнення кількості."], "examples": [{"title": "ти", "sentences": [{"bo": "ཁྱེད་རང་ལ་དེབ་ཡོད་པས།", "uk": "У тебе є книга?"}, {"bo": "ཁྱེད་རང་ལ་དེབ་མེད་པས།", "uk": "У тебе немає книги?"}]}, {"title": "ви двоє", "sentences": [{"bo": "ཁྱེད་རང་གཉིས་ལ་དེབ་ཡོད་པས།", "uk": "У вас двох є книга?"}, {"bo": "ཁྱེད་རང་གཉིས་ལ་དེབ་མེད་པས།", "uk": "У вас двох немає книги?"}]}, {"title": "ви (група)", "sentences": [{"bo": "ཁྱེད་རང་ཚོ་ལ་དེབ་ཡོད་པས།", "uk": "У вас є книга?"}, {"bo": "ཁྱེད་རང་ཚོ་ལ་དེབ་མེད་པས།", "uk": "У вас немає книги?"}]}]}, {"title": "4. Запитання про нього, неї та інших людей", "paragraphs": ["Для третьої особи до пари ཡོད་རེད། / ཡོད་མ་རེད། додається питальне པས།. Так можна запитати і про наявність, і про відсутність предмета.", "У ситуації безпосереднього спостереження інша пара запитань — འདུག་གས། та མི་འདུག་གས།. Після འདུག використовується གས།."], "examples": [{"title": "він", "sentences": [{"bo": "ཁོང་ལ་དེབ་ཡོད་རེད་པས།", "uk": "У нього є книга?"}, {"bo": "ཁོང་ལ་དེབ་ཡོད་མ་རེད་པས།", "uk": "У нього немає книги?"}]}, {"title": "вона", "sentences": [{"bo": "ཁོང་ལ་དེབ་ཡོད་རེད་པས།", "uk": "У неї є книга?"}, {"bo": "ཁོང་ལ་དེབ་ཡོད་མ་རེད་པས།", "uk": "У неї немає книги?"}]}, {"title": "вони двоє", "sentences": [{"bo": "ཁོང་གཉིས་ལ་དེབ་ཡོད་རེད་པས།", "uk": "У них двох є книга?"}, {"bo": "ཁོང་གཉིས་ལ་དེབ་ཡོད་མ་རེད་པས།", "uk": "У них двох немає книги?"}]}, {"title": "вони (група)", "sentences": [{"bo": "ཁོང་ཚོ་ལ་དེབ་ཡོད་རེད་པས།", "uk": "У них є книга?"}, {"bo": "ཁོང་ཚོ་ལ་དེབ་ཡོད་མ་རེད་པས།", "uk": "У них немає книги?"}]}, {"title": "Питаємо про спостереження: вона", "sentences": [{"bo": "ཁོང་ལ་དེབ་འདུག་གས།", "uk": "У неї є книга?"}, {"bo": "ཁོང་ལ་དེབ་མི་འདུག་གས།", "uk": "У неї немає книги?"}]}]}, {"title": "5. Як відповісти: займенник змінюється разом із мовцем", "paragraphs": ["Коли питають «ти?», ти відповідаєш «я». На «ви двоє?» відповідаєш «ми двоє», а на «ви?» — «ми», якщо говориш від імені групи. У власній відповіді вживай ཡོད། або མེད།.", "На заперечне запитання теж відповідай повним реченням: так зрозуміло, чи є предмет. У питанні про третю особу займенник не змінюється: «у неї?» → «у неї»."], "examples": [{"title": "Ти → я", "sentences": [{"bo": "ཁྱེད་རང་ལ་དེབ་ཡོད་པས།", "uk": "Запитання: у тебе є книга?"}, {"bo": "ང་ལ་དེབ་མེད།", "uk": "Відповідь: у мене немає книги."}]}, {"title": "Ви двоє → ми двоє", "sentences": [{"bo": "ཁྱེད་རང་གཉིས་ལ་དེབ་ཡོད་པས།", "uk": "Запитання: у вас двох є книга?"}, {"bo": "ང་གཉིས་ལ་དེབ་ཡོད།", "uk": "Відповідь: у нас двох є книга."}]}, {"title": "Ви → ми: заперечне запитання", "sentences": [{"bo": "ཁྱེད་རང་ཚོ་ལ་དེབ་མེད་པས།", "uk": "Запитання: у вас немає книги?"}, {"bo": "ང་ཚོ་ལ་དེབ་ཡོད།", "uk": "Відповідь: у нас є книга."}]}, {"title": "Вона → вона", "sentences": [{"bo": "ཁོང་ལ་དེབ་ཡོད་རེད་པས།", "uk": "Запитання: у неї є книга?"}, {"bo": "ཁོང་ལ་དེབ་ཡོད་མ་རེད།", "uk": "Відповідь: у неї немає книги."}]}]}, {"title": "6. Перевір себе перед домашнім", "paragraphs": ["Знайди власника повністю. У «вони двоє» це ཁོང་གཉིས་; постав ལ་ після нього, а потім предмет.", "Визнач, що робиш: повідомляєш про себе, стверджуєш про іншого чи питаєш співрозмовника. Потім обери стверджувальне або заперечне закінчення.", "Не плутай володіння і місце: у володінні ལ་ стоїть після власника, у реченні про місцеперебування — після назви місця.", "Це базові моделі для поточних вправ. У живому мовленні закінчення залежать також від ситуації та джерела знання, тому сам займенник не визначає їх у всіх можливих випадках."], "examples": [{"title": "Порівняй місце частки ལ་", "sentences": [{"bo": "ང་ལ་ཁང་པ་ཡོད།", "uk": "У мене є будинок. Власник ང་ → ལ་ → предмет ཁང་པ་."}, {"bo": "ང་ཁང་པ་ལ་ཡོད།", "uk": "Я в будинку. Людина ང་ → місце ཁང་པ་ → ལ་."}]}]}]}}, {"title": "У мене немає", "source": "Colloquium · володіння → Homework 1, вправи 1 і 3", "examples": [{"title": "Є → немає", "pieces": [["ང་", "я", "person"], ["ལ་", "після власника", "link"], ["དེབ་", "книга", "object"], ["མེད།", "немає", "ending"]], "meaning": "[Certain] ང་ལ་དེབ་མེད། — у мене немає книги."}, {"title": "У нас двох немає книги", "pieces": [["ང་གཉིས་", "ми двоє", "person"], ["ལ་", "після власника", "link"], ["དེབ་", "книга", "object"], ["མེད།", "немає", "ending"]], "meaning": "[Certain] Для «я» і «ми» в таблиці курсу: ཡོད་ → མེད་."}], "questions": [{"prompt": "У мене немає телефона. Обери закінчення.", "options": ["ཡོད།", "མེད།", "མིན།"], "answer": 1, "explain": "[Certain] ང་ལ་ཁ་པར་མེད། — у мене немає телефона.", "hint": "Для відсутності предмета в цій моделі потрібне མེད་."}, {"prompt": "Чи треба виправляти ང་གཉིས་ལ་དེབ་མེད།?", "options": ["Так, прибрати ལ་", "Так, замінити མེད་ на མིན་", "Ні, за моделлю курсу все правильно"], "answer": 2, "explain": "[Certain] Це коректний рядок, хоча він потрапив у розділ ДЗ «виправ помилки».", "hint": "Перевір: ми двоє → ལ་ → книга → немає."}]}, {"title": "А в тебе є?", "source": "Colloquium · питання → Homework 1 і 2, вправа 2", "examples": [{"title": "У тебе є книга?", "pieces": [["ཁྱེད་རང་", "ти", "person"], ["ལ་", "після власника", "link"], ["དེབ་", "книга", "object"], ["ཡོད་པས།", "є?", "ending"]], "meaning": "[Certain] У запитанні до співрозмовника в цьому курсі — ཡོད་པས།."}, {"title": "У мене є книга", "pieces": [["ང་", "я", "person"], ["ལ་", "після власника", "link"], ["དེབ་", "книга", "object"], ["ཡོད།", "є", "ending"]], "meaning": "[Certain] У відповіді про себе: «ти» → «я», ཡོད་པས་ → ཡོད་."}], "questions": [{"prompt": "Обери питання «У тебе є телефон?»", "options": ["ཁྱེད་རང་ལ་ཁ་པར་ཡོད་པས།", "ཁྱེད་རང་ལ་ཁ་པར་ཡོད།"], "answer": 0, "explain": "[Certain] Питальне закінчення тут — ཡོད་པས།.", "hint": "Шукай закінчення з པས་."}, {"prompt": "Відповідай: «У мене немає книги».", "options": ["ཁྱེད་རང་ལ་དེབ་མེད།", "ང་ལ་དེབ་མེད།"], "answer": 1, "explain": "[Certain] ང་ལ་དེབ་མེད། — у мене немає книги.", "hint": "Відповідаєш про себе: почни з ང་."}]}, {"title": "Який предмет?", "source": "Colloquium · ознаки предметів → Homework 1, вправи 1 і 5", "examples": [{"title": "Кіт + білий", "pieces": [["ཞི་མི་", "кіт", "object"], ["དཀར་པོ་", "білий", "link"]], "meaning": "[Certain] ཞི་མི་དཀར་པོ་ — білий кіт. Ознака йде після іменника."}, {"title": "Предмет разом з ознакою", "pieces": [["ང་ལ་", "у мене", "person"], ["ཁྱི་ནག་པོ་", "чорний собака", "object"], ["ཡོད།", "є", "ending"]], "meaning": "[Certain] ང་ལ་ཁྱི་ནག་པོ་ཡོད། — у мене є чорний собака."}], "questions": [{"prompt": "Як скласти «червоний капелюх»?", "options": ["དམར་པོ་ཞྭ་མོ་", "ཞྭ་མོ་དམར་པོ་"], "answer": 1, "explain": "[Certain] ཞྭ་མོ་ — капелюх, དམར་པོ་ — червоний; ознака після предмета.", "hint": "Спершу капелюх, потім його колір."}, {"prompt": "Яке слово в ཁྱི་ནག་པོ་ є прикметником?", "options": ["ཁྱི་", "ནག་པོ་"], "answer": 1, "explain": "[Certain] ནག་པོ་ — чорний; ཁྱི་ — собака.", "hint": "Прикметник відповідає на «який?»."}]}, {"title": "Де я?", "source": "Colloquium · місцезнаходження → Homework 2, вправи 1 і 3", "examples": [{"title": "Я в Тибеті", "pieces": [["ང་", "я", "person"], ["བོད་", "Тибет", "object"], ["ལ་", "після місця", "link"], ["ཡོད།", "перебуваю", "ending"]], "meaning": "[Certain] ང་བོད་ལ་ཡོད། — я в Тибеті."}, {"title": "Ми двоє в ресторані", "pieces": [["ང་གཉིས་", "ми двоє", "person"], ["ཟ་ཁང་", "ресторан", "object"], ["ལ་", "після місця", "link"], ["ཡོད།", "перебуваємо", "ending"]], "meaning": "[Certain] Для місцезнаходження ལ་ ставимо після назви місця."}], "questions": [{"prompt": "Обери «Я в готелі».", "options": ["ང་ལ་མགྲོན་ཁང་ཡོད།", "ང་མགྲོན་ཁང་ལ་ཡོད།"], "answer": 1, "explain": "[Certain] མགྲོན་ཁང་ལ་ — у готелі. Частка стоїть після місця.", "hint": "Шукай ལ་ після མགྲོན་ཁང་."}, {"prompt": "Що означає ང་བོད་ལ་མེད།?", "options": ["У мене немає Тибету", "Я не в Тибеті", "Я в Тибеті"], "answer": 1, "explain": "[Certain] བོད་ལ་ — у Тибеті; མེད་ тут заперечує перебування.", "hint": "Місце + ལ་. Наприкінці — заперечення."}]}, {"title": "Чий це дім?", "source": "Colloquium · родові частки; Відмінки · 6 → Homework 2", "examples": [{"title": "Дім Таші", "pieces": [["བཀྲ་ཤིས་", "Таші", "person"], ["ཀྱི་", "зв’язок «чий»", "link"], ["ནང་", "дім", "object"]], "meaning": "[Certain] Після кінцевого ས་ у таблиці — ཀྱི་."}, {"title": "Дім Тензіна", "pieces": [["བསྟན་འཛིན་", "Тензін", "person"], ["གྱི་", "зв’язок «чий»", "link"], ["ནང་", "дім", "object"]], "meaning": "[Certain] Після кінцевого ན་ у таблиці — གྱི་."}], "questions": [{"prompt": "Заповни: བཀྲ་ཤིས་ … ནང་.", "options": ["གི་", "ཀྱི་", "གྱི་"], "answer": 1, "explain": "[Certain] བཀྲ་ཤིས་ཀྱི་ནང་ — дім Таші.", "hint": "Остання літера імені — ས་."}, {"prompt": "Де стоїть ལ་ у значенні «у домі Тензіна»?", "options": ["བསྟན་འཛིན་ལ་གྱི་ནང་", "བསྟན་འཛིན་གྱི་ནང་ལ་"], "answer": 1, "explain": "[Certain] ལ་ стоїть після всього блоку «дім Тензіна».", "hint": "Спершу склади «чий дім», потім додай частку місця."}]}, {"title": "Маю чи перебуваю?", "source": "Homework 1 і 2; авторська практика до теми Homework 3", "examples": [{"title": "У мене є будинок", "pieces": [["ང་", "власник", "person"], ["ལ་", "після власника", "link"], ["ཁང་པ་", "будинок", "object"], ["ཡོད།", "є", "ending"]], "meaning": "[Certain] ང་ལ་ཁང་པ་ཡོད། — у мене є будинок."}, {"title": "Я в будинку", "pieces": [["ང་", "особа", "person"], ["ཁང་པ་", "місце", "object"], ["ལ་", "після місця", "link"], ["ཡོད།", "перебуваю", "ending"]], "meaning": "[Certain] ང་ཁང་པ་ལ་ཡོད། — я в будинку."}], "questions": [{"prompt": "ང་ལ་མགྲོན་ཁང་ཡོད། — що це означає?", "options": ["Я в готелі", "У мене є готель"], "answer": 1, "explain": "[Certain] ལ་ після ང་ позначає власника в цій моделі.", "hint": "Перевір, після якого слова стоїть ལ་."}, {"prompt": "Який варіант означає «Ми двоє в Америці»?", "options": ["ང་གཉིས་ལ་ཨ་རི་ཡོད།", "ང་གཉིས་ཨ་རི་ལ་ཡོད།"], "answer": 1, "explain": "[Certain] ཨ་རི་ལ་ — в Америці. Це виправлення рядка Homework 2.", "hint": "Постав ལ་ після назви місця ཨ་རི་."}]}, {"title": "Ролі та відмінки", "source": "Відмінки · 3, 4, 5, 6 і 7", "examples": [{"title": "Чий? → хто робить?", "pieces": [["གི་", "родовий зв’язок", "link"], ["གིས་", "діяч / знаряддя", "ending"]], "meaning": "[Certain] У таблиці གི་ та གིས་ належать до різних відмінкових груп."}, {"title": "Лікар дає ліки хворому", "pieces": [["སྨན་པས་", "лікар · діяч", "person"], ["ནད་པ་ལ་", "хворому · одержувач", "link"], ["སྨན་", "ліки", "object"], ["སྟེར།", "дає", "ending"]], "meaning": "[Certain] Тут ལ་ позначає одержувача; це приклад 4-го відмінка."}], "questions": [{"prompt": "Що позначає ལ་ у ནད་པ་ལ་ з цього прикладу?", "options": ["Місце", "Одержувача", "Власника книги"], "answer": 1, "explain": "[Certain] Ліки дають хворому: він одержувач.", "hint": "Запитай: кому лікар дає ліки?"}, {"prompt": "ཆུ་ལས་ — «з води». Яка тут роль?", "options": ["Джерело", "Володіння", "Заперечення"], "answer": 0, "explain": "[Certain] ལས་ тут указує на джерело: звідки з’являються бульбашки.", "hint": "«Звідки?» — питання про джерело."}]}, {"title": "Частки та значення", "source": "ГРАМАТИКА · родові й орнаментальні частки; Colloquium · ідентичність", "examples": [{"title": "Кінець слова → форма частки", "pieces": [["ག་ / ང་", "кінець слова", "object"], ["གི་", "родова частка", "link"]], "meaning": "[Certain] За таблицею: після ག་ або ང་ → གི་; наприклад ཁོང་གི་ — його / її. Окрема група часток означає «також»: після кінцевого ག་ використовуємо ཀྱང་."}, {"title": "То мій горщик", "pieces": [["དེ་", "те", "person"], ["ངའི་", "мій", "link"], ["བུམ་པ་", "горщик", "object"], ["ཡིན།", "є · ідентичність", "ending"]], "meaning": "[Certain] དེ་ངའི་བུམ་པ་ཡིན། — приклад ідентичності з матеріалу про відмінки."}], "questions": [{"prompt": "Після кінцевого ག་ яка форма «також» у конспекті?", "options": ["ཀྱང་", "ཡང་", "འང་"], "answer": 0, "explain": "[Certain] Після ག་ в цій групі — ཀྱང་.", "hint": "Це окрема сім’я часток; для ག་ потрібне ཀྱང་."}, {"prompt": "Обери закінчення для «У мене є горщик».", "options": ["ཡིན།", "ཡོད།"], "answer": 1, "explain": "[Certain] ང་ལ་བུམ་པ་ཡོད། — володіння; «То мій горщик» — інша конструкція.", "hint": "Питання про наявність у власника, як у «У мене є книга»."}]}];
 const VOCAB=[{"bo": "དེབ་", "uk": "книга", "en": "book", "group": "іменник", "acip": "DEB"}, {"bo": "ཁམ་བུ་", "uk": "персик", "en": "peach", "group": "іменник", "acip": "KHAM BU"}, {"bo": "ཁ་པར་", "uk": "телефон", "en": "phone", "group": "іменник", "acip": "KHA PAR"}, {"bo": "ཨམ་", "uk": "манго", "en": "mango", "group": "іменник", "acip": "AAM"}, {"bo": "ཁང་པ་", "uk": "будинок", "en": "house", "group": "іменник", "acip": "KHANG PA"}, {"bo": "སྨྱུ་གུ་", "uk": "ручка", "en": "pen", "group": "іменник", "acip": "SMYU GU"}, {"bo": "མེ་ཏོག་", "uk": "квітка", "en": "flower", "group": "іменник", "acip": "ME TOG"}, {"bo": "ཁྱི་", "uk": "собака", "en": "dog", "group": "іменник", "acip": "KHYI"}, {"bo": "ཞི་མི་", "uk": "кіт / кішка", "en": "cat", "group": "іменник", "acip": "ZHI MI"}, {"bo": "ཀུ་ཤུ་", "uk": "яблуко", "en": "apple", "group": "іменник", "acip": "KU SHU"}, {"bo": "ཚིག་མཛོད་", "uk": "словник", "en": "dictionary", "group": "іменник", "acip": "TSIG MDZOD"}, {"bo": "གྲོགས་པོ་", "uk": "друг", "en": "friend", "group": "іменник", "acip": "GROGS PO"}, {"bo": "ཚ་ལུ་མ་", "uk": "апельсин", "en": "orange", "group": "іменник", "acip": "TSA LU MA"}, {"bo": "ཞྭ་མོ་", "uk": "капелюх", "en": "hat", "group": "іменник", "acip": "ZHVA MO"}, {"bo": "མུ་མེན་", "uk": "фіолетовий", "en": "purple", "group": "ознака кольору в прикладі", "acip": "MU MEN"}, {"bo": "ནག་པོ་", "uk": "чорний", "en": "black", "group": "прикметник", "acip": "NAG PO"}, {"bo": "དཀར་པོ་", "uk": "білий", "en": "white", "group": "прикметник", "acip": "DKAR PO"}, {"bo": "དམར་པོ་", "uk": "червоний", "en": "red", "group": "прикметник", "acip": "DMAR PO"}, {"bo": "མང་པོ་", "uk": "багато / численний", "en": "many / numerous", "group": "кількісне означення у ДЗ", "acip": "MANG PO"}, {"bo": "ལྷ་མོ་", "uk": "Лхамо", "en": "Lhamo", "group": "ім’я", "acip": "LHA MO"}, {"bo": "བཀྲ་ཤིས་", "uk": "Таші", "en": "Tashi", "group": "ім’я", "acip": "BKRA SHIS"}, {"bo": "བོད་", "uk": "Тибет", "en": "Tibet", "group": "місця й назви", "acip": "BOD"}, {"bo": "ཨ་རི་", "uk": "США / Америка в ДЗ", "en": "USA / America", "group": "місця й назви", "acip": "AA RI"}, {"bo": "ཉི་ཧོང་", "uk": "Японія", "en": "Japan", "group": "місця й назви", "acip": "NYI HONG"}, {"bo": "འབྲུག་ཡུལ་", "uk": "Бутан", "en": "Bhutan", "group": "місця й назви", "acip": "'BRUG YUL"}, {"bo": "ཡུ་རོབ་", "uk": "Європа", "en": "Europe", "group": "місця й назви", "acip": "YU ROB"}, {"bo": "རྒྱ་ནག་", "uk": "Китай", "en": "China", "group": "місця й назви", "acip": "RGYA NAG"}, {"bo": "རྒྱ་གར་", "uk": "Індія", "en": "India", "group": "місця й назви", "acip": "RGYA GAR"}, {"bo": "བལ་ཡུལ་", "uk": "Непал", "en": "Nepal", "group": "місця й назви", "acip": "BAL YUL"}, {"bo": "དཔེ་མཛོད་ཁང་", "uk": "бібліотека", "en": "library", "group": "місця й назви", "acip": "DPE MDZOD KHANG"}, {"bo": "ཟ་ཁང་", "uk": "ресторан", "en": "restaurant", "group": "місця й назви", "acip": "ZA KHANG"}, {"bo": "མགྲོན་ཁང་", "uk": "готель / гостьовий будинок", "en": "hotel / guesthouse", "group": "місця й назви", "acip": "MGRON KHANG"}, {"bo": "དགོན་པ་", "uk": "монастир", "en": "monastery", "group": "місця й назви", "acip": "DGON PA"}, {"bo": "སྨན་ཁང་", "uk": "лікарня", "en": "hospital", "group": "місця й назви", "acip": "SMAN KHANG"}, {"bo": "ཚོང་ཁང་", "uk": "магазин", "en": "shop", "group": "місця й назви", "acip": "TSONG KHANG"}, {"bo": "ཁྲོམ་", "uk": "ринок", "en": "market", "group": "місця й назви", "acip": "KHROM"}, {"bo": "ནང་", "uk": "дім / усередині за контекстом", "en": "home / inside", "group": "місця й назви", "acip": "NANG"}, {"bo": "ཆེན་པོ་", "uk": "великий", "en": "big / large", "group": "місця й назви", "acip": "CHEN PO"}, {"bo": "ག་པར་", "uk": "де", "en": "where", "group": "місця й назви", "acip": "GA PAR"}, {"bo": "བསྟན་འཛིན་", "uk": "Тензін", "en": "Tenzin", "group": "місця й назви", "acip": "BSTAN 'DZIN"}, {"bo": "སྒྲོལ་མ་", "uk": "Долма", "en": "Dolma", "group": "місця й назви", "acip": "SGROL MA"}, {"bo": "སྐལ་བཟང་", "uk": "Келсанг", "en": "Kelsang", "group": "місця й назви", "acip": "SKAL BZANG"}, {"bo": "ང་", "acip": "NGA", "uk": "я", "en": "I", "group": "займенник"}, {"bo": "ང་གཉིས་", "acip": "NGA GNYIS", "uk": "ми двоє / ми обоє", "en": "we two / both of us", "group": "займенник"}, {"bo": "ང་ཚོ་", "acip": "NGA TSO", "uk": "ми (група)", "en": "we (a group)", "group": "займенник"}, {"bo": "ཁྱེད་རང་", "acip": "KHYED RANG", "uk": "ти", "en": "you (one person)", "group": "займенник"}, {"bo": "ཁྱེད་རང་གཉིས་", "acip": "KHYED RANG GNYIS", "uk": "ви двоє / ви обоє", "en": "you two / both of you", "group": "займенник"}, {"bo": "ཁྱེད་རང་ཚོ་", "acip": "KHYED RANG TSO", "uk": "ви (група)", "en": "you (a group)", "group": "займенник"}, {"bo": "ཁོང་", "acip": "KHONG", "uk": "він / вона", "en": "he / she", "group": "займенник"}, {"bo": "ཁོང་གཉིས་", "acip": "KHONG GNYIS", "uk": "вони двоє / вони обоє", "en": "they two / both of them", "group": "займенник"}, {"bo": "ཁོང་ཚོ་", "acip": "KHONG TSO", "uk": "вони (група)", "en": "they (a group)", "group": "займенник"}, {"bo": "ངའི་", "acip": "NGA'I", "uk": "мій / моя / моє / мої", "en": "my", "group": "займенник"}, {"bo": "ང་གཉིས་ཀྱི་", "acip": "NGA GNYIS KYI", "uk": "наш / наша / наше / наші (нас двох)", "en": "our (of the two of us)", "group": "займенник"}, {"bo": "ང་ཚོའི་", "acip": "NGA TSO'I", "uk": "наш / наша / наше / наші (групи)", "en": "our (of our group)", "group": "займенник"}, {"bo": "ཁྱེད་རང་གི་", "acip": "KHYED RANG GI", "uk": "твій / твоя / твоє / твої", "en": "your (one person)", "group": "займенник"}, {"bo": "ཁྱེད་རང་གཉིས་ཀྱི་", "acip": "KHYED RANG GNYIS KYI", "uk": "ваш / ваша / ваше / ваші (вас двох)", "en": "your (of the two of you)", "group": "займенник"}, {"bo": "ཁྱེད་རང་ཚོའི་", "acip": "KHYED RANG TSO'I", "uk": "ваш / ваша / ваше / ваші (групи)", "en": "your (of your group)", "group": "займенник"}, {"bo": "ཁོང་གི་", "acip": "KHONG GI", "uk": "його / її", "en": "his / her", "group": "займенник"}, {"bo": "ཁོང་གཉིས་ཀྱི་", "acip": "KHONG GNYIS KYI", "uk": "їхній / їхня / їхнє / їхні (їх двох)", "en": "their (of the two of them)", "group": "займенник"}, {"bo": "ཁོང་ཚོའི་", "acip": "KHONG TSO'I", "uk": "їхній / їхня / їхнє / їхні (групи)", "en": "their (of their group)", "group": "займенник"}, {"bo": "འདི་", "acip": "'DI", "uk": "цей / ця / це", "en": "this", "group": "займенник"}, {"bo": "དེ་", "acip": "DE", "uk": "той / та / те", "en": "that / it", "group": "займенник"}];
 const HOMEWORK=[{"title": "Homework 1: བདག་དབང་།  possession", "groups": [{"title": "༡༽ Напишіть наступні речення тибетською", "items": ["У мене є персик.", "У нас двох нема книги.", "У тебе є телефон.", "У вас двох нема манго.", "У них є будинок.", "У нього нема ручки.", "У вас є фіолетова квітка?", "У неї є чорний собака?", "У них двох нема кота?"]}, {"title": "༢༽ Перекладіть наступні речення на українську та англійську", "items": ["དྲི་བ། ཁྱེད་རང་ལ་ཁ་པར་ཡོད་པས།\nལན། ང་ལ་ཁ་པར་ཡོད།", "དྲི་བ། ཁྱེད་རང་གཉིས་ལ་ཀུ་ཤུ་ཡོད་པས།\nལན། ང་གཉིས་ལ་ཀུ་ཤུ་མེད།", "དྲི་བ། ཁྱེད་རང་ཚོ་ལ་དེབ་མེད་པས།\nལན། ང་ཚོ་ལ་དེབ་ཡོད།", "དྲི་བ། ཁོང་ལ་ཁམ་བུ་འདུག་གས། (མི་འདུག་གས།)\nལན། ཁོང་ལ་ཁམ་བུ་འདུག", "དྲི་བ། ཁོང་གཉིས་ལ་ཚིག་མཛོད་ཡོད་རེད་པས།\nལན། ཁོང་གཉིས་ལ་ཚིག་མཛོད་ཡོད་རེད།", "དྲི་བ། ཁོང་ཚོ་ལ་སྨྱུ་གུ་མི་འདུག་གས།\nལན། ཁོང་ཚོ་ལ་སྨྱུ་གུ་མི་འདུག", "དྲི་བ། ལྷ་མོ་ལ་ཁྱི་ཡོད་མ་རེད་པས།\nལན། ལྷ་མོ་ལ་ཁྱི་ཡོད་རེད།"]}, {"title": "༣༽ У реченнях є помилки, напишіть їх правильно", "items": ["ང་ཁ་པར་ཡོད།", "ང་གཉིས་ལ་ …", "ང་ཚོ་ … ཁ་པར་ …", "ཁྱེད་རང་ལ་ཚིག་མཛོད་ …", "ཁྱེད་རང་གཉིས་ … ཀུ་ཤུ་འདུག་གས།", "ཁྱེད་རང་ཚ་ … དེབ་ཡོད་མ་རེད་པས།", "ཁོང་ལ་གྲོགས་པོ་འདུག་ …", "ཁོང་གཉིས་ … ཨམ་ …", "ཁོང་ཚོ་ལ་དེབ་ཡོད་རེད།", "བཀྲ་ཤིས་ … གྲོགས་པོ་འདུག"]}, {"title": "༤༽ Вставте пропущені частки і напишіть всі можливі закінчення (всюди пишіть лише стверджувальні варіанти, лише коли вказано питальні, тоді пишіть питальні)", "items": ["ང་་་་ལ་་་་ཞི་མི་་་་་་་་་ཡོད།  མེད།", "ང་གཉིས་་་་ལ་་་་ཁང་པ་་་་་་་་ཡོད།  མེད།", "ཁྱེད་རང་་་་ལ་་་་གྲོགས་པོ་མང་པོ་་་་་་་་ཡོད་རེད།  ཡོད་མ་རེད།  འདུག།  མི་འདུག", "ཁྱེད་རང་ཚོ་་་་ལ་་་་ཀུ་ཤུ་་་་་་་་ཡོད་རེད།  ཡོད་མ་རེད།  འདུག།  མི་འདུག", "ཁྱེད་རང་གཉིས་་་་ལ་་་་ཚིག་མཛོད་་་་་་་་ཡོད་པས།  མེད་པས། (питальне речення)", "ཁོང་་་་ལ་་་་ཁ་པར་་་་་་་་ཡོད་རེད།  ཡོད་མ་རེད།  འདུག།  མི་འདུག", "ཁོང་ཚོ་་་་ལ་་་་ཚ་ལུ་མ་མང་པོ་་་་་་་་ཡོད་རེད་པས།  ཡོད་མ་རེད་པས།  འདུག་གས།  མི་འདུག་གས། (питальне речення)", "བཀྲ་ཤིས་་་་ལ་་་་ཞྭ་མོ་དམར་པོ་་་་་་་་ཡོད་རེད།  ཡོད་མ་རེད།  འདུག།  མི་འདུག", "བཀྲ་ཤིས་་་་ལ་་་་ཞི་མི་དཀར་པོ་་་་་་་་ཡོད་རེད་པས།  ཡོད་མ་རེད་པས།  འདུག་གས།  མི་འདུག་གས། (питальне речення)"]}, {"title": "༥༽ Випишіть всі слова з цього ДЗ, які є іменниками, прислівниками та прикметниками та напишіть переклад до кожного з них англійською і українською", "items": ["མིང་ཚིག  Noun — іменник\nབྱ་བའི་རྒྱན་ཚིག Adverb — прислівник\nརན་ཚིག Adjective — прикметник\nམཚན། Name — ім’я"]}]}, {"title": "Homework 2: ས་གནས། location", "groups": [{"title": "༡༽ Напишіть наступні речення тибетською", "items": ["Я в Тибеті.", "Ми двоє в бібліотеці.", "Ми в ресторані.", "Ви двоє в Америці.", "Він в будинку Тензіна.", "Ти в Японії?", "Вони в готелі?"]}, {"title": "༢༽ Перекладіть наступні речення на українську та англійську", "items": ["དྲི་བ། ཁྱེད་རང་ག་པར་ཡོད།\nལན། ང་འབྲུག་ཡུལ་ལ་ཡོད།", "དྲི་བ། ཁྱེད་རང་གཉིས་མགྲོན་ཁང་ལ་ཡོད་པས།\nལན། ང་གཉིས་མགྲོན་ཁང་ལ་ཡོད།", "དྲི་བ། ཁྱེད་རང་ཚོ་ཡུ་རོབ་ལ་མེད་པས།\nལན། ང་ཚོ་ཡུ་རོབ་ལ་མེད། ང་ཚོ་རྒྱ་ནག་ལ་ཡོད།", "དྲི་བ། ཁོང་བཀྲ་ཤིས་ཀྱི་ནང་ལ་འདུག་གས།\nལན། ཁོང་བཀྲ་ཤིས་ཀྱི་ནང་ལ་འདུག", "དྲི་བ། ཁོང་གཉིས་དགོན་པ་ལ་ཡོད་རེད་པས།\nལན། ཁོང་གཉིས་དགོན་པ་ལ་ཡོད་རེད།", "དྲི་བ། ཁོང་ཚོ་ཟ་ཁང་ལ་མི་འདུག་གས།\nལན། ཁོང་ཚོ་ཟ་ཁང་ལ་མི་འདུག", "དྲི་བ། ལྷ་མོ་སྨན་ཁང་ལ་ཡོད་རེད་པས།\nལན། ལྷ་མོ་སྨན་ཁང་ལ་ཡོད་མ་རེད།"]}, {"title": "༣༽ У реченнях є помилки, напишіть їх правильно", "items": ["ང་བོད་ལ་ཡོད་རེད།", "ང་གཉིས་ལ་ཨ་རི་ཡོད།", "ང་ཚོ་སྨན་ཁང་མེད།", "ཁྱེད་རང་ལ་མགྲོན་ཁང་ཡོད།", "ཁྱེད་རང་གཉིས་རྒྱ་གར་ལ་འདུག་གས།", "ཁྱེད་རང་ཚ་འབྲུག་ཡུལ་ཡོད་མ་རེད་པས།", "ཁོང་གི་གྲོགས་པོ་བལ་ཡུལ་ལ་མི་འདུག་གས།", "ཁོང་གཉིས་ལ་དགོན་པ་ཡོད།", "ཁོང་ཚོ་ལ་དཔེ་མཛོད་ཁང་ཆེན་པོ་ལ་མེད་རེད།", "བསྟན་འཛིན་ལ་ཉི་ཧོང་འདུག"]}, {"title": "༤༽ Вставте пропущені частки і напишіть всі можливі закінчення (всюди пишіть лише стверджувальні варіанти, лише коли вказано питальні, тоді пишіть питальні)", "items": ["ང་དགོན་པ་་་་་་་་་", "ང་གཉིས་ཚོང་ཁང་་་་་་་་", "ཁྱེད་རང་ག་པར་་་་་་་་", "ཁྱེད་རང་ཚོ་ཁྲོམ་ཆེན་པོ་་་་་་་་", "ཁྱེད་རང་གཉིས་དཔེ་མཛོད་ཁང་་་་་་་་ (питальне речення)", "ཁོང་ངའི་ནང་་་་་་་་", "ཁོང་ཚོ་ཚོང་ཁང་་་་་་་་ (питальне речення)", "བཀྲ་ཤིས་དང་སྒྲོལ་མ་ཟ་ཁང་ཆེན་པོ་་་་་་་་", "སྐལ་བཟང་ཁྲོམ་་་་་་་་ (питальне речення)"]}, {"title": "༥༽ Випишіть всі слова з цього ДЗ, які є іменниками, прислівниками та прикметниками та напишіть переклад до кожного з них англійською і українською", "items": ["ས་ཆ། / རྒྱལ་ཁབ།  Place / Country — Місце / Країна\nབྱ་བའི་རྒྱན་ཚིག Adverb — прислівник\nརན་ཚིག Adjective — прикметник\nམཚན། Name — ім’я"]}]}];
@@ -393,6 +424,31 @@ function dictionaryEntries(query='',category='',sort='uk',descending=false){
   return tokens.every(t=>fields.some(f=>f.includes(t)||f.replace(/\s/g,'').includes(t)));
  }).sort((a,b)=>(descending?-1:1)*(compare.compare(a[field],b[field])||a.id-b.id));
 }
+// Three-way merge preserves independent changes and requires a choice for overlapping edits.
+function mergeProgress(base, local, remote, prefer='local') {
+ const copy=x=>JSON.parse(JSON.stringify(x));
+ const equal=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
+ const result=copy(remote),conflicts=[];
+ for(const field of Object.keys(local)){
+  if(field==='kind'||field==='version')continue;
+  if(field==='last'){result.last=copy(equal(base.last,local.last)?remote.last:local.last);continue;}
+  result[field]={};
+  const b=base[field]||{},l=local[field]||{},r=remote[field]||{};
+  for(const key of new Set([...Object.keys(b),...Object.keys(l),...Object.keys(r)])){
+   if(field==='studyAttempts'||field==='homeworkAttempts'){
+    const seen=new Set();result[field][key]=[...(l[key]||[]),...(r[key]||[])].filter(a=>{const k=JSON.stringify(a);if(seen.has(k))return false;seen.add(k);return true;}).sort((a,b)=>(a.at||'').localeCompare(b.at||''));continue;
+   }
+   let value;
+   if(equal(l[key],r[key])||equal(r[key],b[key]))value=l[key];
+   else if(equal(l[key],b[key]))value=r[key];
+   else if(field==='studyLast'){value=l[key];}
+   else {conflicts.push({field,key});value=prefer==='local'?l[key]:r[key];}
+   if(value!==undefined)result[field][key]=copy(value);
+  }
+ }
+ return {state:result,conflicts};
+}
+
 // UI begins here
 (()=>{
 const $=id=>document.getElementById(id), app=$('app');
@@ -401,6 +457,7 @@ let state=emptyState(),storageOK=true,route='home',lesson=0,step=0,choice=null,r
 try{const stored=localStorage.getItem(STORAGE_KEY);if(stored)state=safeState(JSON.parse(stored));}catch(e){storageOK=false;}
 function announce(text){$('notice').textContent=text;}
 function save(){
+ if(githubAccount){githubChanged();return;}
  if(!storageOK)return;
  try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch(e){storageOK=false;announce('Автоматичне збереження недоступне. Перед закриттям завантаж копію прогресу кнопкою ліворуч.');}
 }
@@ -774,7 +831,176 @@ $('import-file').addEventListener('change',async e=>{
   announce('Копію додано до поточного прогресу.'+(writtenConflict?` Збережено ${writtenConflict} поточних письмових відповідей, які відрізнялися від копії.`:'')+(conflict?` Збережено ${conflict} поточних чернеток, які відрізнялися від копії.`:'')+(!storageOK?' Автоматичне збереження недоступне; завантаж оновлену копію.':''));
  }catch(err){announce('Не вдалося відновити прогрес. '+err.message);}finally{e.target.value='';}
 });
+const githubConfig={"projectUrl": "https://ijhfhoflxwvbwaanjvmg.supabase.co", "publishableKey": "sb_publishable_UJPzSnT0i7L2FzS5vYwWCg_Yz5CI7ck", "siteUrl": "https://tanyatymo.github.io/tibetan/"};
+// This code is inserted into the app closure only for GitHub Pages.
+let githubClient,githubAccount=null,githubTimer,githubSending=false,githubLeaving=false;
+const githubCopy=value=>JSON.parse(JSON.stringify(value));
+// JSONB can return properties in a different order from the local copy.
+function githubStable(value){
+ if(Array.isArray(value))return value.map(githubStable);
+ if(value&&typeof value==='object')return Object.fromEntries(Object.keys(value).sort().map(k=>[k,githubStable(value[k])]));
+ return value;
+}
+const githubEqual=(a,b)=>JSON.stringify(githubStable(a))===JSON.stringify(githubStable(b));
+function githubProgressStatus(message){
+ $('github-sync-status').textContent=message;
+ if(githubAccount)$('github-account-message').textContent=message;
+}
+function githubCache(account){
+ try{
+  localStorage.setItem(account.key,JSON.stringify({state,base:account.base,revision:account.revision}));
+  storageOK=true;
+ }catch{storageOK=false;}
+}
+function githubReadGuest(){
+ try{const guest=localStorage.getItem(STORAGE_KEY);return guest?safeState(JSON.parse(guest)):emptyState();}
+ catch{return emptyState();}
+}
+function githubRepaint(){
+ const active=document.activeElement,id=active?.id,start=active?.selectionStart,end=active?.selectionEnd;
+ render();
+ const next=id&&$(id);
+ if(next&&next!==active){next.focus();if(typeof start==='number')next.setSelectionRange?.(start,end);}
+}
+function githubSetAccount(session){
+ const user=session?.user;
+ if(user?.id===githubAccount?.id)return;
+ if(githubAccount){if(!githubLeaving){clearTimeout(githubTimer);location.reload();}return;}
+ if(!user)return;
+ const account={id:user.id,key:STORAGE_KEY+':supabase:'+user.id,base:emptyState(),revision:0,loaded:false,busy:null,conflict:null};
+ githubAccount=account;
+ state=emptyState();storageOK=true;
+ try{
+  const raw=JSON.parse(localStorage.getItem(account.key)||'null');
+  if(raw){const saved=safeState(raw.state),base=safeState(raw.base);state=saved;account.base=base;account.revision=Number.isSafeInteger(raw.revision)&&raw.revision>=0?raw.revision:0;}
+ }catch{storageOK=false;}
+ $('github-account-open').textContent='Мій обліковий запис';
+ $('github-account-title').textContent='Мій обліковий запис';
+ $('github-account-email').textContent=user.email||'';
+ $('github-login-form').hidden=true;$('github-account-actions').hidden=false;
+ $('github-import').hidden=githubEqual(githubReadGuest(),emptyState());
+ go('home');githubProgressStatus('Завантажую прогрес…');githubSync(account,true);
+}
+function githubChanged(){
+ const a=githubAccount;if(!a)return;
+ githubCache(a);githubProgressStatus(navigator.onLine?'Зміни очікують збереження…':(storageOK?'Немає інтернету. Зміни збережено в цьому браузері.':'Немає інтернету. Збережи копію прогресу вручну.'));
+ clearTimeout(githubTimer);githubTimer=setTimeout(()=>githubSync(a),900);
+}
+async function githubLoad(a){
+ const {data,error}=await githubClient.from('learning_progress').select('progress,revision').eq('user_id',a.id).maybeSingle();
+ if(error)throw error;
+ if(!data)return {state:emptyState(),revision:0};
+ if(!Number.isSafeInteger(data.revision)||data.revision<1)throw Error('Invalid progress revision');
+ return {state:safeState(data.progress),revision:data.revision};
+}
+function githubMerge(base,local,remote,prefer){
+ return mergeProgress(githubStable(base),githubStable(local),githubStable(remote),prefer);
+}
+function githubAccept(a,remote){
+ const merged=githubMerge(a.base,state,remote.state);
+ if(merged.conflicts.length){
+  a.conflict={base:a.base,remote};githubProgressStatus('Є різні відповіді. Обери, яку копію залишити.');
+  if(!$('github-conflict').open)$('github-conflict').showModal();
+  return false;
+ }
+ a.loaded=true;a.base=remote.state;a.revision=remote.revision;
+ if(!githubEqual(state,merged.state)){state=safeState(merged.state);githubRepaint();}
+ githubCache(a);return true;
+}
+function githubSync(a=githubAccount,pull=false){
+ if(!a||a!==githubAccount||a.conflict)return Promise.resolve(false);
+ if(a.busy)return a.busy;
+ a.busy=(async()=>{
+  try{
+   if(!navigator.onLine)throw Error('offline');
+   if(!a.loaded||pull){const remote=await githubLoad(a);if(a!==githubAccount||!githubAccept(a,remote))return false;}
+   for(let attempt=0;attempt<3&&!githubEqual(state,a.base);attempt++){
+    const snapshot=githubCopy(state),revision=a.revision+1;
+    const table=githubClient.from('learning_progress');
+    const query=a.revision===0?table.insert({user_id:a.id,progress:snapshot,revision}):table.update({progress:snapshot,revision}).eq('user_id',a.id).eq('revision',a.revision);
+    const {data,error}=await query.select('revision').maybeSingle();
+    if(a!==githubAccount)return false;
+    if(error&&!(a.revision===0&&error.code==='23505'))throw error;
+    if(!data){const remote=await githubLoad(a);if(a!==githubAccount||!githubAccept(a,remote))return false;continue;}
+    a.base=snapshot;a.revision=data.revision;githubCache(a);
+   }
+   const saved=githubEqual(state,a.base);
+   githubProgressStatus(saved?'✓ Прогрес збережено онлайн':'Зміни очікують збереження…');
+   if(!saved){clearTimeout(githubTimer);githubTimer=setTimeout(()=>githubSync(a),1000);}
+   return saved;
+  }catch(error){
+   if(a===githubAccount)githubProgressStatus(navigator.onLine?(error.code==='PGRST205'||error.code==='42P01'?'Таблицю прогресу ще не налаштовано. Збережи копію, якщо потрібно.':'Не вдалося синхронізувати прогрес. Натисни «Оновити прогрес» або збережи копію.'):'Немає інтернету. Прогрес ще не синхронізовано.');
+   return false;
+  }
+ })().finally(()=>{a.busy=null;});
+ return a.busy;
+}
+function githubResolve(prefer){
+ const a=githubAccount,c=a?.conflict;if(!c)return;
+ const losing=prefer==='local'?c.remote.state:(c.imported||state);
+ download(JSON.stringify(losing,null,2),'tibetan-progress-before-merge.json','application/json');
+ state=safeState(githubMerge(c.base,c.imported||state,c.remote.state,prefer).state);
+ a.base=c.imported?a.base:c.remote.state;a.revision=c.remote.revision;a.loaded=true;a.conflict=null;
+ if(c.imported)$('github-import').hidden=true;
+ $('github-conflict').close();githubRepaint();githubChanged();
+}
+async function githubImport(){
+ const a=githubAccount;if(!a||a.conflict)return;
+ if(!await githubSync(a,true)||a!==githubAccount||a.conflict)return;
+ const guest=githubReadGuest(),base=emptyState(),remote={state:githubCopy(state),revision:a.revision};
+ const merged=githubMerge(base,guest,remote.state);
+ if(merged.conflicts.length){a.conflict={base,remote,imported:guest};$('github-conflict').showModal();return;}
+ state=safeState(merged.state);$('github-import').hidden=true;githubRepaint();githubChanged();
+}
+async function githubLogin(event){
+ event.preventDefault();if(githubSending||githubAccount||!githubClient)return;
+ githubSending=true;$('github-send-link').disabled=true;
+ const message=$('github-account-message');message.textContent='Надсилаю посилання…';
+ try{
+  const {error}=await githubClient.auth.signInWithOtp({email:$('github-email').value.trim(),options:{emailRedirectTo:githubConfig.siteUrl}});
+  if(error)throw error;
+  message.textContent='Перевір пошту. Відкрий посилання в тому самому браузері.';
+ }catch(error){message.textContent=error.status===429?'Забагато запитів. Зачекай хвилину й спробуй ще раз.':error.code==='email_address_not_authorized'?'Для цієї адреси поки не налаштовано надсилання листів. Звернися до власниці додатка.':'Не вдалося надіслати посилання. Перевір адресу та спробуй ще раз.';}
+ finally{githubSending=false;$('github-send-link').disabled=false;}
+}
+async function githubLogout(){
+ const a=githubAccount;if(!a||githubLeaving)return;
+ githubLeaving=true;$('github-signout').disabled=true;
+ try{
+  if(a.busy)await a.busy;
+  if(!githubEqual(state,a.base)&&!await githubSync(a)){
+   githubCache(a);
+   if(!storageOK)download(JSON.stringify(state,null,2),'tibetan-progress-before-signout.json','application/json');
+  }
+  const {error}=await githubClient.auth.signOut({scope:'local'});if(error)throw error;
+  location.reload();
+ }catch{githubProgressStatus('Не вдалося вийти. Спробуй ще раз.');}
+ finally{githubLeaving=false;$('github-signout').disabled=false;}
+}
+function githubStart(){
+ bind('github-account-open',()=>$('github-account').showModal());
+ $('github-login-form').addEventListener('submit',githubLogin);
+ bind('github-signout',githubLogout);bind('github-sync',()=>githubSync(githubAccount,true));bind('github-import',githubImport);
+ bind('github-keep-local',()=>githubResolve('local'));bind('github-keep-remote',()=>githubResolve('remote'));
+ $('github-conflict').addEventListener('cancel',e=>e.preventDefault());
+ const message=$('github-account-message');
+ if(location.origin!==new URL(githubConfig.siteUrl).origin||!window.supabase){
+  $('github-send-link').disabled=true;
+  message.textContent=window.supabase?'Вхід доступний на опублікованому сайті.':'Не вдалося завантажити вхід. Перевір інтернет або відкрий опублікований сайт.';return;
+ }
+ try{
+  githubClient=window.supabase.createClient(githubConfig.projectUrl,githubConfig.publishableKey,{auth:{flowType:'pkce',storageKey:STORAGE_KEY+':supabase-auth'}});
+  githubClient.auth.onAuthStateChange((_event,session)=>setTimeout(()=>githubSetAccount(session),0));
+  // Auth errors on redirect may be provided in either the fragment or the query.
+  const redirectError=new URLSearchParams(location.hash.slice(1)).has('error')||new URLSearchParams(location.search).has('error');
+  if(redirectError){message.textContent='Посилання для входу не спрацювало. Запроси нове й відкрий його в цьому браузері.';$('github-account').showModal();}
+ }catch{$('github-send-link').disabled=true;message.textContent='Не вдалося налаштувати вхід.';return;}
+ window.addEventListener('online',()=>githubSync(githubAccount,true));
+ window.addEventListener('focus',()=>{if(!['INPUT','TEXTAREA'].includes(document.activeElement?.tagName))githubSync(githubAccount,true);});
+}
+
 bind('help',()=>$('help-dialog').showModal());render();
+document.addEventListener('DOMContentLoaded',githubStart,{once:true});
 })();
 </script>
 </body>
